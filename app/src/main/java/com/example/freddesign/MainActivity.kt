@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(Page3)
         }
 
-        val envoisms = findViewById<ImageButton>(R.id.BTrappel)
-            envoisms.setOnClickListener {
+        val rappel = findViewById<ImageButton>(R.id.BTrappel)
+            rappel.setOnClickListener {
             val Rappelsms = Intent(this, Rappelsms::class.java)
             startActivity(Rappelsms)
         }

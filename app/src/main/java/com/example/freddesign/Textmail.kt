@@ -1,22 +1,25 @@
 package com.example.freddesign
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.google.mlkit.vision.text.Text
+import java.util.Arrays.toString
 
 class Textmail : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_textmail)
+        auth = Firebase.auth
+
 
         val btDeconnexion = findViewById<Button>(R.id.BTDeconnexion)
         val tvEmail = findViewById<TextView>(R.id.TVEmail)
@@ -24,7 +27,6 @@ class Textmail : AppCompatActivity() {
 
 
         val btVerifEmail = findViewById<Button>(R.id.BTVerifMail)
-        auth = Firebase.auth
         val user = Firebase.auth.currentUser
 
         if (user != null) {
@@ -60,6 +62,19 @@ class Textmail : AppCompatActivity() {
             startActivity(MainActivity)
         }
 
-    }
+        val btEnvoiMail= findViewById<Button>(R.id.BTTextMail)
 
+        btEnvoiMail.setOnClickListener {
+            val intent = Intent(Intent.ACTION_SENDTO)
+            intent.data = Uri.parse("mailto: antiste_frederic@yahoo.fr")
+            intent.putExtra(Intent.EXTRA_TEXT, "Texte de votre mail :")
+            intent.putExtra(Intent.EXTRA_SUBJECT, "Texte automatique : demande d'informations")
+            startActivity(intent)
+        }
+    }
 }
+
+
+
+
+

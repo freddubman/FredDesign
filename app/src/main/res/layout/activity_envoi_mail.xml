@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/icone03" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/ETMessage"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:ems="10"
