@@ -1,15 +1,16 @@
 package com.example.freddesign
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
+import android.view.View
 
-class Page3 : AppCompatActivity() {
+class ToFacebook : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_page3)
+        setContentView(R.layout.activity_to_facebook)
 
         val rappel = findViewById<ImageButton>(R.id.BTrappel)
         rappel.setOnClickListener {
@@ -41,8 +42,12 @@ class Page3 : AppCompatActivity() {
             val MainActivity = Intent(this, MainActivity::class.java)
             startActivity(MainActivity)
         }
+    }
 
-
-
+    fun getUrlFromIntent(view: View) {
+        val url = "fb://facewebmodal/f?href=https://www.facebook.com/reuniplans/" //  fb://facewebmodal/f?href=URL PAGE FACEBOOK permet d'ouvrir fia l'appli il est également possible d'ouvrir la page html via le navigateur par défaut en mettant simplement l'url
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
     }
 }

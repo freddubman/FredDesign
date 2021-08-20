@@ -71,11 +71,35 @@ class RegisterActivity2 : AppCompatActivity() {
 
         }
 
+        val rappel = findViewById<ImageButton>(R.id.BTrappel)
+        rappel.setOnClickListener {
+            val DemandeRappelsms = Intent(this, DemandeRappelsms::class.java)
+            startActivity(DemandeRappelsms)
+        }
+
+        val envoimail = findViewById<ImageButton>(R.id.BTmail)
+        envoimail.setOnClickListener {
+            val EnvoiMail = Intent(this, EnvoiMail::class.java)
+            startActivity(EnvoiMail)
+        }
+
+        val toLinkedin = findViewById<ImageButton>(R.id.BTlinkedin)
+        toLinkedin.setOnClickListener {
+            val ToLinkedin = Intent(this, ToLinkedin::class.java)
+            startActivity(ToLinkedin)
+        }
+
+        val toFacebook = findViewById<ImageButton>(R.id.BTfacebook)
+        toFacebook.setOnClickListener {
+            val ToFacebook = Intent(this, ToFacebook::class.java)
+            startActivity(ToFacebook)
+        }
+
         val btRetour = findViewById<ImageButton>(R.id.BTRetour)
 
         btRetour.setOnClickListener {
-            val EnvoiMail = Intent(this, EnvoiMail::class.java)
-            startActivity(EnvoiMail)
+            val MainActivity = Intent(this, MainActivity::class.java)
+            startActivity(MainActivity)
         }
     }
 }

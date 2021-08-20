@@ -32,6 +32,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(EnvoiMail)
         }
 
+        val toLinkedin = findViewById<ImageButton>(R.id.BTlinkedin)
+        toLinkedin.setOnClickListener {
+            val ToLinkedin = Intent(this, ToLinkedin::class.java)
+            startActivity(ToLinkedin)
+        }
+
+        val toFacebook = findViewById<ImageButton>(R.id.BTfacebook)
+            toFacebook.setOnClickListener {
+            val ToFacebook = Intent(this, ToFacebook::class.java)
+            startActivity(ToFacebook)
+        }
+
 
 
         /*val appel = findViewById<ImageButton>(R.id.BTappel)
