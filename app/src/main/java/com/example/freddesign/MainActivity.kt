@@ -44,13 +44,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(ToFacebook)
         }
 
-
-
-        /*val appel = findViewById<ImageButton>(R.id.BTappel)
-        appel.setOnClickListener {
-           Intent(Intent.ACTION_CALL_BUTTON,Uri.parse("0692305662"))
-            }*/
-
-        }
+        /*val bttelephone = findViewById<ImageButton>(R.id.BTappel)
+        bttelephone.setOnClickListener {
+            val phone = "00262305662"
+            val appel = Intent(Intent.ACTION_CALL_BUTTON)
+            appel.data = Uri.parse(phone)
+            startActivity(appel)
+        }*/
 
     }
+
+}
