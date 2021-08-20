@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
 
 class ToLinkedin : AppCompatActivity() {
@@ -44,12 +45,15 @@ class ToLinkedin : AppCompatActivity() {
             val MainActivity = Intent(this, MainActivity::class.java)
             startActivity(MainActivity)
         }
-    }
 
-    fun getUrlFromIntent(view: View) {
-        val url = "https://re.linkedin.com/in/fr%C3%A9d%C3%A9ric-antiste-0986721b4"
-        val intent = Intent(Intent.ACTION_VIEW)
-        intent.data = Uri.parse(url)
-        startActivity(intent)
+        val btOpenLinkedin = findViewById<Button>(R.id.BTOpenLinkedin)
+        btOpenLinkedin.setOnClickListener {
+                val url = "https://re.linkedin.com/in/fr%C3%A9d%C3%A9ric-antiste-0986721b4"
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse(url)
+                startActivity(intent)
+
+        }
     }
 }
+

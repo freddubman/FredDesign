@@ -20,8 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#009688"
-        android:onClick="getUrlFromIntent"
-        android:text="Compte Linkedin" />
+        android:text="Page Linkedin" />
 
     <TextView
         android:id="@+id/TVEmail"
