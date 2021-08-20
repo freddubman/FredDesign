@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FredDesign">
-
+        <activity
+            android:name=".DemandeRappelsms"
+            android:exported="true" />
         <activity
             android:name=".Textmail"
             android:exported="true" />
@@ -41,6 +43,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>

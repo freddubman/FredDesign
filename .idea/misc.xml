@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/utilisateur/AndroidStudioProjects/FredDesign/app/src/main/res/layout/activity_accueil.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/utilisateur/AndroidStudioProjects/FredDesign/app/src/main/res/layout/activity_demande_rappelsms.xml" value="0.2368659420289855" />
         <entry key="..\:/Users/utilisateur/AndroidStudioProjects/FredDesign/app/src/main/res/layout/activity_envoi_mail.xml" value="0.25" />
         <entry key="..\:/Users/utilisateur/AndroidStudioProjects/FredDesign/app/src/main/res/layout/activity_forgot.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/utilisateur/AndroidStudioProjects/FredDesign/app/src/main/res/layout/activity_main.xml" value="0.264" />
@@ -11,7 +12,7 @@
         <entry key="..\:/Users/utilisateur/AndroidStudioProjects/FredDesign/app/src/main/res/layout/activity_page3.xml" value="0.24094202898550723" />
         <entry key="..\:/Users/utilisateur/AndroidStudioProjects/FredDesign/app/src/main/res/layout/activity_rappelsms.xml" value="0.24365942028985507" />
         <entry key="..\:/Users/utilisateur/AndroidStudioProjects/FredDesign/app/src/main/res/layout/activity_register2.xml" value="0.24547101449275363" />
-        <entry key="..\:/Users/utilisateur/AndroidStudioProjects/FredDesign/app/src/main/res/layout/activity_textmail.xml" value="0.2" />
+        <entry key="..\:/Users/utilisateur/AndroidStudioProjects/FredDesign/app/src/main/res/layout/activity_textmail.xml" value="0.264" />
       </map>
     </option>
   </component>

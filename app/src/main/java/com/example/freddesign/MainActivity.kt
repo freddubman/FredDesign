@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         val rappel = findViewById<ImageButton>(R.id.BTrappel)
             rappel.setOnClickListener {
-            val Rappelsms = Intent(this, Rappelsms::class.java)
-            startActivity(Rappelsms)
+            val DemandeRappelsms = Intent(this, DemandeRappelsms::class.java)
+            startActivity(DemandeRappelsms)
         }
 
         val envoimail = findViewById<ImageButton>(R.id.BTmail)

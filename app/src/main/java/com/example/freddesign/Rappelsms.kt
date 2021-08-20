@@ -5,10 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -53,6 +50,13 @@ class Rappelsms : AppCompatActivity() {
                             Toast.LENGTH_SHORT).show()
                     }
                 }
+        }
+
+        val btRetour = findViewById<ImageButton>(R.id.BTRetour)
+
+        btRetour.setOnClickListener {
+            val MainActivity = Intent(this, MainActivity::class.java)
+            startActivity(MainActivity)
         }
 
         val btRappel= findViewById<Button>(R.id.BTRappel)
